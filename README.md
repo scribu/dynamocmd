@@ -22,13 +22,15 @@ Whilst DynamoDB rocks, sometimes you need to adjust throughputs without having t
 
 As per the AWS node.js SDK, the config file contains a json with the following elements:
 
-	{ "accessKeyId": "YOUR ACCESS KEY", 
+	{
+	  "accessKeyId": "YOUR ACCESS KEY", 
 	  "secretAccessKey": "YOUR SECRET ACCESS KEY", 
-	  "region": "us-east-1"}
+	  "region": "us-east-1"
+	}
 
 ### Interactive
 
-	dynamocmd -c <config file>
+	dynamocmd -f <config file>
 	
 Start dynamocmd in interactive mode. Available commands:
 
